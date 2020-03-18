@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="limpiar" class="limpiar btn">
+      <i class="fas fa-trash"></i>Limpiar Cards
+    </button>
+
+    <h1>
+      Tarjetas de memoria
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i>Agregar nueva tarjeta
+      </button>
+    </h1>
+
+    <div id="contenedor-tarjetas" class="tarjetas">
+      <div class="tarjeta">
+        <div class="tarjeta-interior">
+          <div class="tarjeta-interna-frente">
+            <p>Pregunta</p>
+          </div>
+          <div class="tarjeta-interna-atras">
+            <p>Respuesta</p>
+          </div>
+        </div>
+      </div>
+      <!--Card active-->
+
+      <div class="tarjeta">
+        <div class="tarjeta-interior">
+          <div class="tarjeta-interna-frente">
+            <p>Pregunta</p>
+          </div>
+          <div class="tarjeta-interna-atras">
+            <p>Respuesta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contenedor de tarjetas-->
+
+    <div class="navegacion">
+      <button id="anterior" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <p id="actual"></p>
+
+      <button id="siguiente" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <!--Navegacion-->
+
+    <div id="agregar-contenedor" class="agregar-contenedor">
+      <h1>
+        Agregar nueva tarjeta
+        <button id="ocultar" class="btn btn-small btn-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </h1>
+
+      <div class="form-group">
+        <label for="pregunta">Pregunta</label>
+        <textarea id="pregunta" placeholder="Ingresar Pregunta"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="respuesta">respuesta</label>
+        <textarea id="respuesta" placeholder="Ingresar respuesta"></textarea>
+      </div>
+
+      <button id="agregar-tarjeta" class="btn">
+        <i class="fas fa-plus"></i>Agregar tarjeta
+      </button>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
